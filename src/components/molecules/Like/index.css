@@ -1,0 +1,38 @@
+@font-face {
+    font-family: "icon";
+    src: url("/fonts/icon.f993138.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.like-icon {
+    position: relative;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    font-family: "icon";
+    font-size: 1.25rem;
+    line-height: 1;
+    color: inherit;
+    vertical-align: top;
+    touch-action: manipulation;
+    background-color: initial;
+    border: none;
+    border-radius: 1em;
+}
+
+.like-icon::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: "icon";
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    line-height: 1;
+    text-decoration: none;
+    text-transform: none;
+    vertical-align: middle;
+}

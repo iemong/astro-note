@@ -1,69 +1,123 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { Like } from "../components/molecules/Like/index";
 ---
 
 <Layout title="PCを移行するにあたって無いと困るなと思ったツールを紹介します">
 	<main>
-		<article></article>
+		<article class="mt-12 max-w-[620px] mx-auto">
+			<picture>
+				<img
+					src="https://assets.st-note.com/production/uploads/images/83434530/rectangle_large_type_2_0385b8c5ce7fec367074177f1a73eb24.jpeg?width=800"
+					alt=""
+				/>
+			</picture>
+			<h1 class="headline">
+				PCを移行するにあたって無いと困るなと思ったツールを紹介します
+			</h1>
+			<Like />
+			<!-- TODO: Profile -->
+			<div>
+				<p class="leading-9 text-lg my-9">
+					先日、PCを交換したので、その時に無いと困るわと思って速攻で入れたツールを紹介します。
+					<strong>ちなみにMacです。</strong>
+				</p>
+				<h2 class="leading-9 text-[26px] font-bold mt-[54px]">
+					アプリケーション
+				</h2>
+				<h3
+					class="leading-9 text-[22px] font-bold mt-[54px] -mb-[18px]"
+				>
+					RayCast
+				</h3>
+				<!-- TODO embed card -->
+				<div class="my-9 border rounded-[4px] h-[150px]">
+					embed content
+				</div>
+				<p class="leading-9 text-lg my-9">
+					ランチャーアプリです。Alfred的なやつ。長らく<a
+						href="https://www.alfredapp.com/"
+						target="_blank"
+						class="underline">Alfred</a
+					>を使ってきたんですが、無料だけどほとんど同じことができる &
+					UIが好きだったので変更しました。多分、クリップボード履歴を一番多用している気がする。<br
+					/>
+					TypeScript + Reactで拡張機能を開発できるみたいなので、フロントエンドエンジニアとは親和性が高いかもです。自分もなんか思いついたら作ってみようと思います。
+				</p>
+				<h3
+					class="leading-9 text-[22px] font-bold mt-[54px] -mb-[18px]"
+				>
+					In Your Face
+				</h3>
+				<!-- TODO embed card -->
+				<div class="my-9 border rounded-[4px] h-[150px]">
+					embed content
+				</div>
+				<p class="leading-9 text-lg my-9">
+					会社の同僚のnoteを読んで知ったアプリ。ミーティングの1分前に画面全体を覆って次のミーティングをお知らせしてくれるので、ミーティングに遅刻することが無くなりました。個人的には、ミーティング直前に時間をチラチラ確認する作業が無くなったので歓喜しています。
+				</p>
+				<h3
+					class="leading-9 text-[22px] font-bold mt-[54px] -mb-[18px]"
+				>
+					AltTab
+				</h3>
+				<!-- TODO embed card -->
+				<div class="my-9 border rounded-[4px] h-[150px]">
+					embed content
+				</div>
+				<p class="leading-9 text-lg my-9">
+					Windowsの 'alt + tab'
+					のswitcher機能をMacで再現したアプリです。<br /> Macだと ⌘ + tab
+					でアプリケーションを切り替えれますが、アプリケーション単位なので、複数ウィンドウを開いてる時などに期待してたのと違うウィンドウが開かれて悲しい思いをすることがあると思います。<br
+					/>
+					AltTabを使うとウィンドウ単位のswitcherになるので、自分はこのショートカットを
+					⌘ + tab に上書きして使ってます。
+				</p>
+				<h3
+					class="leading-9 text-[22px] font-bold mt-[54px] -mb-[18px]"
+				>
+					Krisp
+				</h3>
+				<!-- TODO embed card -->
+				<div class="my-9 border rounded-[4px] h-[150px]">
+					embed content
+				</div>
+				<p class="leading-9 text-lg my-9">
+					ノイズキャンセルしてくれるアプリ。ほぼ家で仕事してるんですが、外の鳥鳴き声やMacのファンがうるさいので導入しました。自分では確認してない
+					ので、効果の程は分かりません。
+				</p>
+				<h3
+					class="leading-9 text-[22px] font-bold mt-[54px] -mb-[18px]"
+				>
+					Magnet
+				</h3>
+				<!-- TODO embed card -->
+				<div class="my-9 border rounded-[4px] h-[150px]">
+					embed content
+				</div>
+				<p class="leading-9 text-lg my-9">
+					ウィンドウをドラッグして、右半分,
+					左上など任意の領域に、いい感じに配置してくれるツール。確か、ショートカットでも配置できる。ちなみに先ほど挙げたRaycastでもショートカットで同様に配置できた気がする。ただ、ウィンドウの配置はトラックパッドでやる癖がついてしまって、ショートカット使ったこと無いんですよね。
+				</p>
+				<p class="leading-9 text-lg my-9 mt-[108px]">
+					ここから先はCLI編になります。黒い画面にカタカタ打つ系のやつ。
+				</p>
+			</div>
+		</article>
 	</main>
 </Layout>
 
 <style>
-	:root {
-		--astro-gradient: linear-gradient(0deg, #4f39fa, #da62c4);
-	}
-
-	h1 {
-		margin: 2rem 0;
-	}
-
-	main {
-		margin: auto;
-		padding: 1em;
-		max-width: 60ch;
-	}
-
-	.text-gradient {
-		font-weight: 900;
-		background-image: var(--astro-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 100% 200%;
-		background-position-y: 100%;
-		border-radius: 0.4rem;
-		animation: pulse 4s ease-in-out infinite;
-	}
-
-	@keyframes pulse {
-		0%,
-		100% {
-			background-position-y: 0%;
-		}
-		50% {
-			background-position-y: 80%;
-		}
-	}
-
-	.instructions {
-		line-height: 1.6;
-		margin: 1rem 0;
-		background: #4f39fa;
-		padding: 1rem;
-		border-radius: 0.4rem;
-		color: var(--color-bg);
-	}
-
-	.instructions code {
-		font-size: 0.875em;
-		border: 0.1em solid var(--color-border);
-		border-radius: 4px;
-		padding: 0.15em 0.25em;
-	}
-
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
+	.headline {
+		min-height: 1em;
+		margin-top: 72px;
+		margin-bottom: 18px;
+		font-weight: 700;
+		line-height: 1.5;
+		color: #222;
+		letter-spacing: 0.04em;
+		font-feature-settings: "palt" 1;
+		pointer-events: auto;
+		font-size: 2rem;
 	}
 </style>
