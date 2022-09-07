@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import { Like } from "../components/molecules/Like/index";
 import { CreatorInfo } from "../components/organisms/article/CreatorInfo";
+import EmbedCard from "../components/molecules/EmbedCard/index";
 ---
 
 <Layout title="PCを移行するにあたって無いと困るなと思ったツールを紹介します">
@@ -33,9 +34,13 @@ import { CreatorInfo } from "../components/organisms/article/CreatorInfo";
 				>
 					RayCast
 				</h3>
-				<!-- TODO embed card -->
-				<div class="my-9 border rounded-[4px] h-[150px]">
-					embed content
+				<div class="my-9">
+					<EmbedCard
+						name="Raycast - Supercharged productivity"
+						description="Raycast lets you control your tools with a few keystrokes. It"
+						url="www.raycast.com"
+						thumbnail="https://d2l930y2yx77uc.cloudfront.net/production/uploads/ext/84b40dbdcbefd6131c1d5d70f35ce2fabe86fcadbd09257111a1cb909bad.png"
+					/>
 				</div>
 				<p class="leading-9 text-lg my-9">
 					ランチャーアプリです。Alfred的なやつ。長らく<a
@@ -52,9 +57,12 @@ import { CreatorInfo } from "../components/organisms/article/CreatorInfo";
 				>
 					In Your Face
 				</h3>
-				<!-- TODO embed card -->
-				<div class="my-9 border rounded-[4px] h-[150px]">
-					embed content
+				<div class="my-9">
+					<EmbedCard
+						name="In Your Face - The meeting reminder app"
+						description="An app for Apple macOS that helps you being on time for meeti"
+						url="www.inyourface.app"
+					/>
 				</div>
 				<p class="leading-9 text-lg my-9">
 					会社の同僚のnoteを読んで知ったアプリ。ミーティングの1分前に画面全体を覆って次のミーティングをお知らせしてくれるので、ミーティングに遅刻することが無くなりました。個人的には、ミーティング直前に時間をチラチラ確認する作業が無くなったので歓喜しています。
@@ -64,9 +72,11 @@ import { CreatorInfo } from "../components/organisms/article/CreatorInfo";
 				>
 					AltTab
 				</h3>
-				<!-- TODO embed card -->
-				<div class="my-9 border rounded-[4px] h-[150px]">
-					embed content
+				<div class="my-9">
+					<EmbedCard
+						name="AltTab - Windows alt-tab on macOS"
+						url="alt-tab-macos.netlify.app"
+					/>
 				</div>
 				<p class="leading-9 text-lg my-9">
 					Windowsの 'alt + tab'
@@ -81,9 +91,12 @@ import { CreatorInfo } from "../components/organisms/article/CreatorInfo";
 				>
 					Krisp
 				</h3>
-				<!-- TODO embed card -->
-				<div class="my-9 border rounded-[4px] h-[150px]">
-					embed content
+				<div class="my-9">
+					<EmbedCard
+						name="Noise Cancelling App & Echo Reduction Software | Krisp"
+						description="Krisp cancels background noise and reduces echo during your c"
+						url="krisp.ai"
+					/>
 				</div>
 				<p class="leading-9 text-lg my-9">
 					ノイズキャンセルしてくれるアプリ。ほぼ家で仕事してるんですが、外の鳥鳴き声やMacのファンがうるさいので導入しました。自分では確認してない
@@ -94,9 +107,11 @@ import { CreatorInfo } from "../components/organisms/article/CreatorInfo";
 				>
 					Magnet
 				</h3>
-				<!-- TODO embed card -->
-				<div class="my-9 border rounded-[4px] h-[150px]">
-					embed content
+				<div class="my-9">
+					<EmbedCard
+						name="Magnet – Window manager for Mac"
+						url="magnet.crowdcafe.com"
+					/>
 				</div>
 				<p class="leading-9 text-lg my-9">
 					ウィンドウをドラッグして、右半分,
