@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { Like } from "../components/molecules/Like/index";
+import { CreatorInfo } from "../components/organisms/article/CreatorInfo";
 ---
 
 <Layout title="PCを移行するにあたって無いと困るなと思ったツールを紹介します">
@@ -12,11 +13,13 @@ import { Like } from "../components/molecules/Like/index";
 					alt=""
 				/>
 			</picture>
-			<h1 class="headline">
+			<h1 class="title">
 				PCを移行するにあたって無いと困るなと思ったツールを紹介します
 			</h1>
 			<Like />
-			<!-- TODO: Profile -->
+			<div class="mt-5 mb-[52px]">
+				<CreatorInfo />
+			</div>
 			<div>
 				<p class="leading-9 text-lg my-9">
 					先日、PCを交換したので、その時に無いと困るわと思って速攻で入れたツールを紹介します。
@@ -102,13 +105,14 @@ import { Like } from "../components/molecules/Like/index";
 				<p class="leading-9 text-lg my-9 mt-[108px]">
 					ここから先はCLI編になります。黒い画面にカタカタ打つ系のやつ。
 				</p>
+				<p class="leading-9 text-lg my-9">ここでライフが0に。。</p>
 			</div>
 		</article>
 	</main>
 </Layout>
 
 <style>
-	.headline {
+	.title {
 		min-height: 1em;
 		margin-top: 72px;
 		margin-bottom: 18px;
