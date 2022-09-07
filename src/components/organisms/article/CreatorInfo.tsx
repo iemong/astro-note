@@ -1,6 +1,23 @@
+import { useCallback } from 'react'
 import './CreatorInfo.css'
 
 export const CreatorInfo = () => {
+    const handleClickTwitter = useCallback(() => {
+        alert('click twitter')
+    }, [])
+
+    const handleClickFacebook = useCallback(() => {
+        alert('click facebook')
+    }, [])
+
+    const handleClickLine = useCallback(() => {
+        alert('click facebook')
+    }, [])
+
+    const handleClickMenu = useCallback(() => {
+        alert('click facebook')
+    }, [])
+
     return (
         <div className="flex items-center justify-between">
             <div className="flex gap-2 items-center">
@@ -18,16 +35,16 @@ export const CreatorInfo = () => {
                 </div>
             </div>
             <div className='flex items-center text-[#a8abb1] ml-4'>
-                <button className='flex items-center justify-center w-9 h-9'>
+                <button className='flex items-center justify-center w-9 h-9' onClick={handleClickTwitter}>
                     <i className='icon twitter-icon' />
                 </button>
-                <button className='flex items-center justify-center w-9 h-9'>
+                <button className='flex items-center justify-center w-9 h-9' onClick={handleClickFacebook}>
                     <i className='icon facebook-icon' />
                 </button>
-                <button className='flex items-center justify-center w-9 h-9'>
+                <button className='flex items-center justify-center w-9 h-9' onClick={handleClickLine}>
                     <i className='icon line-icon' />
                 </button>
-                <button className='flex items-center justify-center ml-4'>
+                <button className='flex items-center justify-center ml-4' onClick={handleClickMenu}>
                     <i className='icon more-icon' />
                 </button>
             </div>
