@@ -17,9 +17,9 @@ import EmbedCard from "../components/molecules/EmbedCard/index";
 			<h1 class="title">
 				PCを移行するにあたって無いと困るなと思ったツールを紹介します
 			</h1>
-			<Like />
+			<Like client:idle />
 			<div class="mt-5 mb-[52px]">
-				<CreatorInfo />
+				<CreatorInfo client:idle />
 			</div>
 			<div>
 				<p class="leading-9 text-lg my-9">
@@ -40,6 +40,7 @@ import EmbedCard from "../components/molecules/EmbedCard/index";
 						description="Raycast lets you control your tools with a few keystrokes. It"
 						url="www.raycast.com"
 						thumbnail="https://d2l930y2yx77uc.cloudfront.net/production/uploads/ext/84b40dbdcbefd6131c1d5d70f35ce2fabe86fcadbd09257111a1cb909bad.png"
+						client:visible
 					/>
 				</div>
 				<p class="leading-9 text-lg my-9">
@@ -62,6 +63,7 @@ import EmbedCard from "../components/molecules/EmbedCard/index";
 						name="In Your Face - The meeting reminder app"
 						description="An app for Apple macOS that helps you being on time for meeti"
 						url="www.inyourface.app"
+						client:visible
 					/>
 				</div>
 				<p class="leading-9 text-lg my-9">
@@ -76,6 +78,7 @@ import EmbedCard from "../components/molecules/EmbedCard/index";
 					<EmbedCard
 						name="AltTab - Windows alt-tab on macOS"
 						url="alt-tab-macos.netlify.app"
+						client:visible
 					/>
 				</div>
 				<p class="leading-9 text-lg my-9">
@@ -96,6 +99,7 @@ import EmbedCard from "../components/molecules/EmbedCard/index";
 						name="Noise Cancelling App & Echo Reduction Software | Krisp"
 						description="Krisp cancels background noise and reduces echo during your c"
 						url="krisp.ai"
+						client:visible
 					/>
 				</div>
 				<p class="leading-9 text-lg my-9">
@@ -111,6 +115,7 @@ import EmbedCard from "../components/molecules/EmbedCard/index";
 					<EmbedCard
 						name="Magnet – Window manager for Mac"
 						url="magnet.crowdcafe.com"
+						client:visible
 					/>
 				</div>
 				<p class="leading-9 text-lg my-9">

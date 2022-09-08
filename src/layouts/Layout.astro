@@ -18,7 +18,7 @@ const { title } = Astro.props as Props;
 		<title>{title}</title>
 	</head>
 	<body>
-		<Header />
+		<Header client:load />
 		<slot />
 		<style>
 			:root {
