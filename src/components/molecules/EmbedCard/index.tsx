@@ -14,8 +14,8 @@ const EmbedCard: FC<Props> = (props: Props) => {
     }, [])
 
     return (
-        <button className="flex border rounded-[4px] h-[150px]" onClick={handleClick}>
-            <span className="p-4 flex flex-col justify-center flex-1">
+        <button className="w-full flex border rounded-[4px] h-[150px]" onClick={handleClick}>
+            <span className="h-full p-4 flex flex-col justify-center items-start flex-1">
                 <strong className="line-clamp-2 mb-2 font-bold text-[#222]">{name}</strong>
                 <span className="line-clamp-2 mb-1 text-xs text-[#6f7372]">{description}</span>
                 <span className="text-xs text-[#222]">{url}</span>
